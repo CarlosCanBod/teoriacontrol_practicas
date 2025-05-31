@@ -2,8 +2,8 @@
 clearvars;
 L = 23;
 R = 3.5;
-phi_0 = 0;
-phi_inicial = 0;
+phi_0 = 0;  % Angulo sobre el que se linealiza el sistema
+phi_inicial = 0;  % Angulo inicial del turtlebot
 %https://automaticaddison.com/how-to-derive-the-state-space-model-for-a-mobile-robot/
 A = [0 0 -sin(phi_0); 0 0 cos(phi_0); 0 0 0];
 B = [(R/2)*cos(phi_0) cos(phi_0)*R/2; sin(phi_0)*R/2 sin(phi_0)*R/2; R/L -R/L];
