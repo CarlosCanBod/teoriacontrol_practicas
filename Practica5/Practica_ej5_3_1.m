@@ -20,3 +20,5 @@ u(t<=10,2) = 1;  % Rueda 2
 [y , ts , x ] = lsim ( sys , u , t , x0 );
 y
 plot(y(:,1),y(:,2));
+ylabel("Posicion eje Y")
+xlabel("Posicion eje X")
