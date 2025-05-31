@@ -14,8 +14,8 @@ sys = ss(A,B,C,D);
 x0 = [0;0;phi_inicial];   % Condiciones iniciales  x,y,phi
 t = 0:0.05:10;
 u = zeros(length(t),2);
-u(t<=10,1) = 1;
-u(t<=10,2) = 1;
+u(t<=10,1) = 1;  % Rueda 1
+u(t<=10,2) = 1;  % Rueda 2
 
 [y , ts , x ] = lsim ( sys , u , t , x0 );
 y
